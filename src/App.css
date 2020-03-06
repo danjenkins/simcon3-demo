@@ -1,4 +1,7 @@
 .App {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 18px;
+  line-height: 1.7;
   text-align: center;
 }
 
@@ -21,7 +24,10 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #B0FDFF;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-shadow:0 0 14px #5d9293;
 }
 
 .App-link {
@@ -36,3 +42,19 @@
     transform: rotate(360deg);
   }
 }
+
+.Typist .Cursor {
+  display: inline-block; }
+  .Typist .Cursor--blinking {
+    opacity: 1;
+    animation: blink 1s linear infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+
